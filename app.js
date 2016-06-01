@@ -251,6 +251,8 @@ Semaforo.prototype = {
 	write: function(m){
 		var l = "SINAL " + this.nome + " | " + m + " | TRÁFEGO: " + this.trafegoAtual + " carros |";
 		console.debug(l);
+		var log = document.getElementById("log");
+		log.innerHTML += "<li>" +  l + "</li>";
 	} 
 };
 
